@@ -3,6 +3,7 @@ export const FETCH_POSTS = 'fetch_posts'
 
 export function getPosts() {
   return dispatch =>  {
+
     database.on('value', snapshot => {
       dispatch({
         type: FETCH_POSTS,

@@ -8,6 +8,7 @@ import PostCard from './Components/PostCard';
 
 
 class App extends Component {
+
   componentWillMount() {
     this.props.getPosts();
   }
