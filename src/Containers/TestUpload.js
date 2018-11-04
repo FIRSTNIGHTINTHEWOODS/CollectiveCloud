@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { storage } from '../Storage/firebase'
 export default class TestUpload extends Component {
 
-
   constructor(props) {
-
     super(props);
     this.state= {
-      file: {}
+      file: null
     }
     this.uploadFile = this.uploadFile.bind(this);
     this.chooseFile = this.chooseFile.bind(this);
@@ -18,9 +16,7 @@ export default class TestUpload extends Component {
       this.setState({
         file: file
       });
-        console.log(this.progress);
-      debugger;
-
+      console.log(this.progress);
   }
 
   uploadFile(file) {
